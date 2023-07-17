@@ -3,19 +3,17 @@ import "./portfolio.scss";
 import PortfolioList from "../portfolioList/PortfolioList";
 import { useEffect, useState } from "react";
 // import { ListItemSecondaryAction } from "@material-ui/core";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import {
   featuredPortfolio,
   webPortfolio,
   mobilePortfolio,
-  designPortfolio,
-  contentPortfolio,
 } from "../../data";
 
 export default function Portfolio() {
   const [selected, setSelected] = useState("featured");
   const [data, setData] = useState([]);
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   const handleCardClick = (projectLink) => {
     window.open(projectLink, "_blank");
@@ -33,14 +31,6 @@ export default function Portfolio() {
       id: "mobile",
       title: "Mobile App",
     },
-    {
-      id: "design",
-      title: "Design",
-    },
-    {
-      id: "content",
-      title: "Content",
-    },
   ];
 
   useEffect(() => {
@@ -53,12 +43,6 @@ export default function Portfolio() {
         break;
       case "mobile":
         setData(mobilePortfolio);
-        break;
-      case "design":
-        setData(designPortfolio);
-        break;
-      case "content":
-        setData(contentPortfolio);
         break;
       default:
         setData(featuredPortfolio);

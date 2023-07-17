@@ -1,5 +1,4 @@
-import Weather from "./assets/weather.png";
-import mobile from "./assets/mobile.jpeg";
+
 import myntra from "./assets/myntra_clone.png";
 import code_buster from "./assets/code_buster.png";
 import Gaming_website from "./assets/Gaming_website.png";
@@ -93,57 +92,4 @@ export const mobilePortfolio = [
     img: Gaming_website,
   },
 ];
-export const designPortfolio = [
-  {
-    id: 1,
-    title: "React Weather app",
-    img: weather_app,
-  },
-  {
-    id: 2,
-    title: "Code buster",
-    img: code_buster,
-  },
-  {
-    id: 3,
-    title: "Myntra clone",
-    img: myntra,
-  },
-  {
-    id: 4,
-    title: "Guessing game",
-    img: Guessing_game,
-  },
-  {
-    id: 5,
-    title: "Gaming website",
-    img: Gaming_website,
-  },
-];
-export const contentPortfolio = [
-  {
-    id: 1,
-    title: "React Weather app",
-    img: weather_app,
-  },
-  {
-    id: 2,
-    title: "Code buster",
-    img: code_buster,
-  },
-  {
-    id: 3,
-    title: "Myntra clone",
-    img: myntra,
-  },
-  {
-    id: 4,
-    title: "Guessing game",
-    img: Guessing_game,
-  },
-  {
-    id: 5,
-    title: "Gaming website",
-    img: Gaming_website,
-  },
-];
+
